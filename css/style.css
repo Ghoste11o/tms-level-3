@@ -28,15 +28,17 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ===================================== */
 
+/*  tabs section begin  */
+
 .container {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-.menu-item {
+.menu__item {
     position: relative;
-    width: 203px;
+    width: 200px;
     height: 40px;
     display: inline-block;
     text-transform: uppercase;
@@ -45,17 +47,16 @@ h1, h2, h3, h4, h5, h6, p {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 40px;
     color: #333333;
     border-radius: 5px 5px 0 0;
-    margin-bottom: -1px;
 }
 
-.menu-item:active, .menu-item:focus, .menu-item:hover, .menu-item.active {
+.menu__item:active, .menu__item:focus, .menu__item:hover, .menu__item .active {
     border: 1px solid #C6CBCD;
     z-index: 2;
     border-bottom: none;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .content {
@@ -103,3 +104,5 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: capitalize;
     color: #FFFFFF;
 }
+
+/*  tabs section end  */
