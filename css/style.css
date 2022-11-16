@@ -38,9 +38,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .tabs__menu {
     width: 100%;
+    z-index: 5;
 }
 
-.tabs__menu__item {
+.tabs__menu-item {
     position: relative;
     width: 200px;
     height: 40px;
@@ -55,12 +56,11 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10px 0;
 }
 
-.tabs__menu__item:active, 
-.tabs__menu__item:focus, 
-.tabs__menu__item:hover, 
-.tabs__menu__item.active {
+.tabs__menu-item:active, 
+.tabs__menu-item:focus, 
+.tabs__menu-item:hover, 
+.tabs__menu-item.active {
     border: 1px solid #C6CBCD;
-    z-index: 2;
     border-bottom: none;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -69,43 +69,41 @@ h1, h2, h3, h4, h5, h6, p {
 .tabs__content {
     border: 1px solid #C6CBCD;
     width: 100%;
-    height: 501px;
+    height: 500px;
+    display: flex;
 }
 
-.tabs__content__img--wrapper {
+.tabs__content-img--wrapper {
     width: 470px;
-    float: right;
 }
 
-.tabs__content__img {
+.tabs__content-img {
     width: 100%;
     height: 100%;
 }
 
-.tabs__content__left {
+.tabs__content-about {
     width: calc(100% - 470px);
-    height: 100%;
-    padding: 0 30px 55px 100px;
+    padding: 40px 30px 55px 100px;
 }
 
-.tabs__content__title {
+.tabs__content-about__title {
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 30px;
     line-height: 41px;
     color: #000000;
-    padding: 45px 0;
 }
 
-.tabs__content__about {
+.tabs__content-about__descr {
     font-family: 'Raleway';
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    margin-top: 30px;
+    margin-top: 65px;
 }
 
-.tabs__content__button {
+.tabs__content-about__button {
     width: 270px;
     height: 60px;
     background-color: #EC7979;
@@ -117,6 +115,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #FFFFFF;
     border: none;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 /*      tabs section end    */
@@ -155,17 +154,17 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 70px;
 }
 
-.awesome__list__item {
+.awesome__list-item {
     width: calc(1100px/3);
     margin-right: 30px;
     display: inline-block;
 }
 
-.awesome__list__item:last-child {
+.awesome__list-item:last-child {
     margin-right: 0;
 }
 
-.awesome__list__item__img--wrapper {
+.awesome__list-item__img--wrapper {
     width: 95px;
     height: 95px;
     border: 3px solid #EC7979;
@@ -174,12 +173,12 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10px;
 }
 
-.awesome__list__item__img {
+.awesome__list-item__img {
     width: 100%;
     height: 100%;
 }
 
-.awesome__list__item__title {
+.awesome__list-item__title {
     font-family: 'Open Sans';
     font-size: 24px;
     font-weight: 700;
@@ -189,7 +188,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 35px 0;
 }
 
-.awesome__list__item__descr {
+.awesome__list-item__descr {
     font-family: 'Raleway';
     font-size: 18px;
     line-height: 21px;
