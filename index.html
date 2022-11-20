@@ -12,74 +12,73 @@
     
     <!-- HEADER -->
 
-    <section class="header">
+    <header class="header">
         <div class="container">
-            <ul class="header__logo">
-                <li class="header__logo-item">
-                    <a href="#">
-                       <img src="./img/ax_small.png" alt="axit">
-                    </a>
-                </li> 
-                <li class="header__logo-item">
-                    <a href="#">
-                        <img src="./img/it_small.png" alt="axit">
-                    </a>
-                </li>
-            </ul>
-            <div class="header--space"></div>
-            <ul class="header__menu">
-                <li class="header__menu-item">
-                    <a class="header__menu-item__text" href="#">features</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-item__text" href="#">about</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-item__text" href="#">pricing</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-item__text" href="#">reviews</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-item__text" href="#">contact</a>
-                </li>
-            </ul>
+            <a class="header__logo" href="#">
+                <svg width="87" height="31" viewBox="0 0 87 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3163 0H15.8289L26.1059 31H20.5146L17.9158 23.2718H8.1507L5.5913 31H0L10.3163 0ZM16.9314 19.0366L13.0726 6.24366L9.05633 19.0366H16.9314Z" fill="white"/>
+                    <path d="M32.086 0L39.016 11.4394L45.9067 0H51.813L42.1267 15.7183L51.498 31H45.5917L39.016 19.9972L32.401 31H26.4553L35.8266 15.7183L26.1403 0H32.086Z" fill="white"/>
+                    <path d="M54.6277 31V0H60.0615V31H54.6277Z" fill="#EC7979"/>
+                    <path d="M86.8026 5.2831H77.8644V31H72.47V5.2831H63.5318V0H86.8026V5.2831Z" fill="#EC7979"/>
+                </svg>
+            </a>
+            <nav class="nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a class="header__menu-item__text" href="#">features</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-item__text" href="#">about</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-item__text" href="#">pricing</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-item__text" href="#">reviews</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-item__text" href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
 
     <!-- BANNER -->
 
     <section class="banner">
         <div class="container">
-            <div class="banner__logo">
-                <img class="banner__logo-img" src="./img/ax.png" alt="axit">
-                <img class="banner__logo-img" src="./img/it.png" alt="axit">
+            <div class="banner__info">
+                <div class="banner__logo">
+                    <svg width="170" height="55" viewBox="0 0 170 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.3089 0H31.161L51.3924 55H40.3853L35.2693 41.2887H16.0456L11.0071 55H0L20.3089 0ZM33.3314 33.7747L25.735 11.0775L17.8284 33.7747H33.3314Z" fill="white"/>
+                        <path d="M63.165 0L76.8076 20.2958L90.3728 0H102L82.9313 27.8873L101.38 55H89.7526L76.8076 35.4789L63.7851 55H52.0804L70.5289 27.8873L51.4602 0H63.165Z" fill="white"/>
+                        <path d="M107 55V0H117.64V55H107Z" fill="#EC7979"/>
+                        <path d="M170 9.37324H152.499V55H141.936V9.37324H124.435V0H170V9.37324Z" fill="#EC7979"/>
+                    </svg>                    
+                </div>
+                <h1 class="banner__title">
+                    modern axure template for beautiful prototypes
+                </h1>
+                <div class="separate"></div>
+                <p class="banner__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>    
+                <button class="banner__btn" type="button">download</button>
             </div>
-            <h1 class="banner__title">
-                modern axure template for beautiful prototypes
-            </h1>
-            <div class="separate"></div>
-            <p class="banner__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </p>    
-            <button class="banner__btn" type="button">download</button>
             <form class="banner__form">
                 <h2 class="banner__form__title">
                     try your <span class="banner__form__title--red">free</span> trial today
                 </h2>
-                <ul class="banner__form__input-list">
-                    <li class="banner__form__input-item">
+                    <div class="banner__form__input-item">
                         <input class="banner__form__input-area" type="text" placeholder="Name">
-                    </li>
-                    <li class="banner__form__input__separate"></li>
-                    <li class="banner__form__input-item">
+                    </div>
+                    <div class="banner__form__input-item">
                         <input class="banner__form__input-area" type="email" placeholder="Email">
-                    </li>
-                    <li class="banner__form__input__separate"></li>
-                    <li class="banner__form__input-item">
+                    </div>
+                    <div class="banner__form__input-item">
                         <input class="banner__form__input-area" type="password" placeholder="Password">
-                    </li>
-                    <li class="banner__form__input__separate"></li>
+                    </div>
                 </ul>
                 <button type="submit" class="banner__form__btn">get started</button>
             </form>
