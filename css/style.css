@@ -54,18 +54,23 @@ body {
 /* header section begin */
 
 .header {
-    background: #000000;
-    padding: 22px 0;
     max-width: 1200px;
     width: 100%;
+    background: #000000;
+    padding: 22px 0;
     margin: 0 auto;
-    height: 75px;
 }
 
 .header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
 
 .header__menu {
@@ -89,15 +94,16 @@ body {
 /* banner section begin */
 
 .banner {
-    padding: 280px 0 185px;
-    background: url(../img/image.jpg), rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: 280px 0 185px;
+    background: url(../img/image.jpg), rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
 }
 
 .banner .container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -123,9 +129,10 @@ body {
 
 .banner__separate {
     border-bottom: 1px solid #FFFFFF;
+    text-align: left;
     margin-bottom: 42px;
-    width: 170px;
-    height: 0;
+    max-width: 170px;
+    width: 100%;
 }
 
 .banner__descr {
@@ -214,10 +221,10 @@ body {
 }
 
 .banner__form__btn {
-    height: 60px;
     max-width: 470px;
     width: 100%;
-    background-color: #EC7979;
+    padding: 20px;
+    background: #EC7979;
     border: none;
     border-radius: 0px 0px 10px 10px;
     font-family: 'Open Sans';
