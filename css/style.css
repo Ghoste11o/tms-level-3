@@ -173,12 +173,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .banner__form__input {
-    margin: 0 50px 75px 50px; 
+    padding: 0 50px;
+    margin: 0 0 75px;
 }
 
 .banner__form__input-area {
     border: none;
-    max-width: 370px;
     width: 100%;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -186,8 +186,12 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 19px;
     color: #BDBDBD;
     border-bottom: 1px solid #BDBDBD;
-    padding-bottom: 17px;
+    padding: 17px 0;
     margin-bottom: 33px;
+}
+
+.banner__form__input-area:last-child {
+    margin-bottom: 0;
 }
 
 .banner__form__input-area:focus,:active {
@@ -195,7 +199,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .banner__form__btn {
-    max-width: 470px;
     width: 100%;
     padding: 20px;
     background: #EC7979;
@@ -257,16 +260,12 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
 }
 
-.social__icon__wrap {
+.social__icon {
     width: 70px;
     height: 70px;
     display: flex;
     justify-content: center;
-}
-
-.social__icon {
-    display: block;
-    align-self: center;
+    align-items: center;
 }
 
 /* social section end */
@@ -316,13 +315,12 @@ h1, h2, h3, h4, h5, h6, p {
 .tabs__content-img__wrap {
     max-width: 470px;
     width: 100%;
-    max-height: 500px;
-    height: 100%;
 }
 
 .tabs__content-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .tabs__content-about {
@@ -446,7 +444,6 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 21px;
     text-align: center;
     color: #000000;
-    margin-top: 10px;
 }
 
 /* awesome section end */
@@ -455,9 +452,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .price {
     background-color: #F5F5F5;
-}
-
-.price .container {
     padding: 83px 0;
 }
 
@@ -490,8 +484,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .price__list {
-    max-width: calc(1100px/3);
-    width: 100%;
+    width: calc((100% - 60px) /3);
     margin-right: 30px;
 }
 
@@ -559,8 +552,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* reviews section begin */
 
-.reviews .container {
-    padding: 107px 0;
+.reviews {
+    margin: 107px 0;
 }
 
 .reviews .separate {
@@ -608,8 +601,23 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 40px 20px;
 }
 
-.reviews__customer-text--poly {
-    margin: 0 0 46px 70px;
+.reviews__customer-text__poly-wrap {
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.reviews__customer-text__poly::before {
+    content: "";
+    display: block;
+}
+
+.reviews__customer-text__poly {
+    position: absolute;
+    left: 19%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .reviews__customer__info {
@@ -628,6 +636,7 @@ h1, h2, h3, h4, h5, h6, p {
 .reviews__customer-photo {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .reviews__customer-name {
@@ -653,14 +662,11 @@ h1, h2, h3, h4, h5, h6, p {
 /* banner-2 section begin */
 
 .banner-2 {
+    padding: 70px 0;
     background-size: cover;
     background-position: center;
     background: url(../img/image_2.jpg), rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
-}
-
-.banner-2 .container {
-    padding: 70px 0;
 }
 
 .banner-2__title {
@@ -711,8 +717,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* contact section begin  */
 
-.contact .container {
-    padding: 67px 0;
+.contact {
+    margin: 67px 0;
 }
 
 .contact__title {
@@ -760,8 +766,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 14px;
     line-height: 19px;
     color: #BDBDBD;
-    margin-bottom: 50px;
-    padding-bottom: 16px;
+    margin: 17px 0;
+    padding: 16px 0;
     border-bottom: 1px solid #BDBDBD;
 }
 
@@ -770,8 +776,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contact__form-textarea {
-    max-height: 212px;
-    height: 100%;
     width: 100%;
     border: none;
     resize: none;
@@ -781,6 +785,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 19px;
     color: #BDBDBD;
     border-bottom: 1px solid #BDBDBD;
+    padding: 16px 0;
 }
 
 .contact__form-input__item:focus,
@@ -812,21 +817,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer {
     background: #000000;
-}
-
-.footer .container {
     padding: 35px 0 27px 0;
 }
 
 .footer__social {
     margin: 0 auto 28px auto;
-    max-width: 570px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
 }
 
-.footer__social-item__wrap {
+.social__social-item__icon {
     max-width: 53px;
     width: 100%;
     max-height: 53px;
